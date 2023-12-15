@@ -1,0 +1,28 @@
+.cardsSection{
+  display: grid;
+  padding: 32px;
+  gap: 32px;
+}
+
+.cardWraper{
+  padding: 32px;
+  box-shadow: 8px 8px 65px #0000001a;
+  transition: all cubic-bezier(.19,1,.22,1) .7s;
+}
+
+.cardTitle{
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.cardText{  font-size: 16px; }
+
+@media screen and (min-width: 1025px) {
+  .cardsSection{
+      grid-template-columns: repeat(3, 1fr);
+  }
+
+  .cardTitle{ font-size: 22px; }
+
+  .cardText{  font-size: 18px; }
+}
