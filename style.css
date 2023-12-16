@@ -25,4 +25,22 @@
   .cardTitle{ font-size: 22px; }
 
   .cardText{  font-size: 18px; }
+
+  .cardWraper:nth-child(3n+2){
+      margin-top: 32px;
+      margin-bottom: -32px;
+  }
+
+  .cardWraper:hover{
+      transform: translate3d(0px, 7px, 0px) 
+          scale3d(1, 1, 1) 
+          rotateX(0deg) 
+          rotateY(0deg) 
+          rotateZ(0deg) 
+          skew(0deg, 0deg);
+      transform-style: preserve-3d;
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1);
+      background: var(--white);
+      cursor: pointer;
+  }
 }
